@@ -55,35 +55,28 @@ Authors:
 
 ## Conclusion
 
+The price of a diamond has a direct correlation with its carat. It is not a straight linear correlation but an exponential one. There are other relevant features which also influence its price, such as color, clarity and cut.
+
+* Diamonds Analysis 01
+   - Our first approach was to predict the price applying a separate regression model for each color grade with carat weight, clarity grade and cut grade as independent variables. With this method we achieved a root **mean squared error (RMSE)** result of **979.66** USD, almost beating the goal. `File: Diamonds_Analysis_01_A.ipynb`
+   - Then we improved the model with clustering to create a new variable based on the diamond's carat weight: either belonging to the first 3 quartiles or not. We got a slightly better result with a **RMSE** of **967.38** USD. `File: Diamonds_Analysis_01_B.ipynb`
+
+* Diamonds Analysis 02
+   - On our second approach we switched the way we used color and clarity, creating a regression model for each clarity grade, with color as an independent variable along with carat and cut. With this second approach we got our best **RMSE** result of **791.55** USD. `File: Diamonds_Analysis_02_A.ipynb`
+   - Then we tried the same strategy used before but the results were worsened, going to **RMSE** of **1,213.73** USD. `File: Diamonds_Analysis_02_B.ipynb`
+
+We did not try the approach of using a different regression model for each cut grade because the graphic analysis of the scatterplot showed a more spread out distribution than the clarity and color ones.
+
+**We conclude that the order of the 4Cs which most influences diamond prices is:**
+   1. **Carat**
+   2. **Clarity**
+   3. **Color**
+   4. **Cut**
+
+<br>
+
 ```
-
-▫️ The price of a diamond has a directly correlation with its carat. It is not a straight linear
-correlation, but exponential one, and there are others relevant features that influences its
-price, as the color, clarity and cut.
-
-▫️ Our first approach was to predict the price using a regression for each color category and
-carat, clarity and cut as independent variables, and we had a good result of RMSE 979,66 USD,
-almost beating the goal. Then we tried to improve the model using a new variable that
-classified if the diamond's carat belongs to the first 3 quartiles or not, according to our
-historical data. With that improvment we have got a slightly better result with a RMSE of
-967.38 USD.
-
-▫️ On our second approach we switched the way we used the color and clarity to create our model,
-i.e., we created a regression for each clarity, and used color as independent variable along
-with carat and cut. With this second approach we got our best result of RMSE of 791.55 USD.
-Then we tried same strategy to improve the model inclunding the variable that classifies if the
-diamond's carat belongs to the first 3 quartiles of the historical sample, but the results were
-worsened, going to RMSE of 1,213.73 USD.
-
-▫️ We did not tried the approach using a different regression for each cut, because when we
-analysed it graphically on the scatterplot, it showed to be more spread than clarity and color.
-
-▫️ At the end, we can conclude that the order of the 4 C's features that most influences the
-prices are: carat, clarity, color and cut.
-
-▫️ One thing to notice with this challenge is that when we calculate the RMSE using the data
-used for the model we always got lower values than with the rick's dataset, because the model
-is biased with the data it used to be created from.
+One thing to notice with this challenge is that when we calculate the RMSE using the data used for the model we always got lower values than with the rick's dataset, because the model is biased with the data it used to be created from.
 
 ```
 
