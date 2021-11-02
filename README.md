@@ -87,7 +87,18 @@ is biased with the data it used to be created from.
 
 ```
 
+# YEAH !!! 📊 📈 🤓 🎈
+
+> We managed to make Rick ` 💰💎💰 richer 💰💎💰 `
+
+> Rick's goal was 💲**900** and we got 💲**791** — a **profit increase** of around **➕14%** ★ 🥳 🍾
+
+<br>
+
+<br>
+
 ![img](./images/Rick_Predicted_02_A.png)
+
 
 <a name="deliverables"></a>
 
