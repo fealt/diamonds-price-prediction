@@ -36,7 +36,6 @@ Authors:
 
 ![img](./images/challenge_objectives.png)
 
-
 <a name="metrics"></a>
 
 ## Metrics
@@ -58,18 +57,21 @@ Authors:
 
 ```
 
-▫️ text
+▫️ The price of a diamond has a directly correlation with its carat. It is not a straight linear correlation, but exponential one, and there are others relevant features that influences its price, as the color, clarity and cut.
 
-▫️ text
+▫️ Our first approach was to predict the price using a regression for each color category and carat, clarity and cut as independent variables, and we had a good result of RMSE 979,66 USD, almost beating the goal. Then we tried to improve the model using a new variable that classified if the diamond's carat belongs to the first 3 quartiles or not, according to our historical data. With that improvment we have got a slightly better result with a RMSE of 967.38 USD.
 
-▫️ text
+▫️ On our second approach we switched the way we used the color and clarity to create our model, i.e., we created a regression for each clarity, and used color as independent variable along with carat and cut. With this second approach we got our best result of RMSE of 791.55 USD. Then we tried same strategy to improve the model inclunding the variable that classifies if the diamond's carat belongs to the first 3 quartiles of the historical sample, but the results were worsened, going to RMSE of 1,213.73 USD.
 
-▫️ text
+▫️ We did not tried the approach using a different regression for each cut, because when we analysed it graphically on the scatterplot, it showed to be more spread than clarity and color.
+
+▫️ At the end, we can conclude that the order of the 4 C's features that most influences the prices are: carat, clarity, color and cut.
+
+▫️ One thing to notice with this challenge is that when we calculate the RMSE using the data used for the model we always got lower values than with the rick's dataset, because the model is biased with the data it used to be created from.
 
 ```
 
 ![img](./images/Rick_Predicted_02_A.png)
-
 
 <a name="deliverables"></a>
 
