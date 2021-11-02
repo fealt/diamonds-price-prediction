@@ -63,7 +63,7 @@ The price of a diamond has a direct correlation with its carat. It is not a stra
 
 * Diamonds Analysis 02
    - On our second approach we switched the way we used color and clarity, creating a regression model for each clarity grade, with color as an independent variable along with carat and cut. With this second approach we got our best **RMSE** result of **791.55** USD. `File: Diamonds_Analysis_02_A.ipynb`
-   - Then we tried the same strategy used before but the results were worsened, going to **RMSE** of **1,213.73** USD. `File: Diamonds_Analysis_02_B.ipynb`
+   - Then we tried the same strategy used before but the results were worsened, reaching a **RMSE** of **1,213.73** USD. `File: Diamonds_Analysis_02_B.ipynb`
 
 We did not try the approach of using a different regression model for each cut grade because the graphic analysis of the scatterplot showed a more spread out distribution than the clarity and color ones.
 
@@ -76,15 +76,27 @@ We did not try the approach of using a different regression model for each cut g
 <br>
 
 ```
-One thing to notice with this challenge is that when we calculate the RMSE using the data used for the model we always got lower values than with the rick's dataset, because the model is biased with the data it used to be created from.
+
+Note: we always got lower values calculating the RMSE with the historic data compared to the
+Rick's dataset because the model is biased with its own original data.
 
 ```
 
-# YEAH !!! 📊 📈 🤓 🎈
+<br>
 
+> ❝
+> 
+> **And *voilà***
+>
 > We managed to make Rick ` 💰💎💰 richer 💰💎💰 `
-
-> Rick's goal was 💲**900** and we got 💲**791** — a **profit increase** of around **➕14%** ★ 🥳 🍾
+>
+> Rick's goal was 💲**900** and we got 💲**791**
+>
+> a **profit increase** of around **➕14%**
+>
+> 🥳 🥂 🍾
+>
+> ❞
 
 <br>
 
@@ -137,9 +149,9 @@ One thing to notice with this challenge is that when we calculate the RMSE using
 
 ## Data source
 
-  - Rick's Dataset in CSV format (5,000 rows and 10 different columns) named *rick_diamonds.csv* (./data). 
+  - Rick's Dataset in .csv format (5,000 rows and 10 different columns) named *rick_diamonds.csv* (./data). 
 
-  - Dataset with historic diamonds prices in CSV format (~49,000 rows and 11 different columns) named *hist_diamonds.csv* (./data).
+  - Dataset with historic diamonds prices in .csv format (~49,000 rows and 11 different columns) named *hist_diamonds.csv* (./data).
 
 <br>
 
