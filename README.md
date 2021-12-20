@@ -9,9 +9,9 @@
 
 Authors:
 
-* **Natália Mendes Ceoldo** ▫︎ [GitHub](https://github.com/natmceoldo) ▫︎ [LinkedIn](https://www.linkedin.com/in/natmceoldo/)
-
 * **Felipe Altermann** ▫︎ [GitHub](https://github.com/fealt) ▫︎ [LinkedIn](https://www.linkedin.com/in/felipealtermann/)
+
+* **Natália Mendes Ceoldo** ▫︎ [GitHub](https://github.com/natmceoldo) ▫︎ [LinkedIn](https://www.linkedin.com/in/natmceoldo/)
 
 <br>
 
